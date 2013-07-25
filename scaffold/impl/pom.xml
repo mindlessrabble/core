@@ -21,9 +21,9 @@
       </dependency>
       <dependency>
          <groupId>org.jboss.forge.addon</groupId>
-         <artifactId>scaffold-spi</artifactId>
-         <classifier>forge-addon</classifier>
+         <artifactId>ui-api</artifactId>
          <scope>provided</scope>
+         <version>${project.version}</version>
       </dependency>
    </dependencies>
 </project>

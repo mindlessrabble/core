@@ -12,6 +12,7 @@ import org.jboss.forge.addon.facets.Facet;
 import org.jboss.forge.addon.projects.ProjectFacet;
 import org.jboss.forge.addon.resource.DirectoryResource;
 import org.jboss.forge.addon.resource.Resource;
+import org.jboss.forge.addon.ui.wizard.UIWizardStep;
 
 /**
  * Provides an implementation of Scaffolding for various UI code generation operations.
@@ -46,4 +47,14 @@ public interface ScaffoldProvider extends ProjectFacet
     * responsibility of the ScaffoldProvider to verify whether it can act on the provided resource.
     */
    List<Resource<?>> generateFrom(List<Resource<?>> resource, DirectoryResource targetDir, boolean overwrite);
+   
+   /**
+    * Return the {@link UIWizardStep} {@link Class} that sets up the scaffold of this type.
+    */
+   Class<? extends UIWizardStep> setupStep();
+
+   /**
+    * Return the {@link UIWizardStep} {@link Class} that scaffolds resources supported by this type.
+    */
+   Class<? extends UIWizardStep> selectResourcesStep();
 }

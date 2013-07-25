@@ -16,14 +16,14 @@
       </dependency>
       <dependency>
          <groupId>org.jboss.forge.addon</groupId>
-         <artifactId>scaffold-spi</artifactId>
+         <artifactId>projects</artifactId>
          <classifier>forge-addon</classifier>
-         <scope>provided</scope>
       </dependency>
       <dependency>
          <groupId>org.jboss.forge.addon</groupId>
-         <artifactId>projects</artifactId>
-         <classifier>forge-addon</classifier>
+         <artifactId>ui-api</artifactId>
+         <version>${project.version}</version>
+         <scope>provided</scope>
       </dependency>
    </dependencies>
 </project>
