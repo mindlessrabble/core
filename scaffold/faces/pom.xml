@@ -33,9 +33,9 @@
       </dependency>
       <dependency>
       	 <groupId>org.jboss.forge.addon</groupId>
-      	 <artifactId>javaee</artifactId>
-      	 <classifier>forge-addon</classifier>
+      	 <artifactId>javaee-api</artifactId>
       	 <scope>provided</scope>
+      	 <version>${project.version}</version>
       </dependency>
    </dependencies>
 </project>
